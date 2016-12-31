@@ -1,0 +1,29 @@
+{
+  "name": "protractor-numerator",
+  "version": "0.1.0",
+  "description": "Readable numeration for elements in Protractor tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"[protractor-numerator] tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marketionist/protractor-numerator.git"
+  },
+  "keywords": [
+    "protractor",
+    "protractor elements",
+    "protractor elements numeration",
+    "protractor element number",
+    "protractor elements numbers",
+    "protractor tests",
+    "end-to-end tests",
+    "e2e tests"
+  ],
+  "author": "Dmytro Shpakovskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marketionist/protractor-numerator/issues"
+  },
+  "homepage": "https://github.com/Marketionist/protractor-numerator#readme"
+}
