@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
  * Created by Marketionist on 31.12.2016
@@ -44,7 +44,7 @@ module.exports.number = {
      * @returns {ElementFinder} finder representing the first matching element
      */
     first(elem) {
-        return _getElements(elem).get(0);
+        return this._getElements(elem).get(0);
     },
 
     /**
@@ -73,7 +73,7 @@ module.exports.number = {
      * @returns {ElementFinder} finder representing the second matching element
      */
     second(elem) {
-        return _getElements(elem).get(1);
+        return this._getElements(elem).get(1);
     },
 
     /**
@@ -102,7 +102,7 @@ module.exports.number = {
      * @returns {ElementFinder} finder representing the third matching element
      */
     third(elem) {
-        return _getElements(elem).get(2);
+        return this._getElements(elem).get(2);
     }
 
 };
