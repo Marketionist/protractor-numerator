@@ -1,57 +1,18 @@
 'use strict';
 
 /*
- * Created by Marketionist on 31.12.2016
+ * Created by marketionist on 31.12.2016
  */
 
 // #############################################################################
 
-module.exports.number = {
-
-    _getElements(elem) {
-        let selectorIsXpath = elem.indexOf('//');
-
-        if (selectorIsXpath === 0 || selectorIsXpath === 1) {
-            return element.all(by.xpath(elem));
-        } else {
-            return element.all(by.css(elem));
-        }
-    },
-
-    /**
-     * Get the first matching element for the ElementArrayFinder. This does not
-     * actually retrieve the underlying element.
-     *
-     * @alias number.first(locator)
-     * @view
-     * <ul class="items">
-     *   <li>First</li>
-     *   <li>Second</li>
-     *   <li>Third</li>
-     *   <li>Fourth</li>
-     *   <li>Fifth</li>
-     *   <li>Sixth</li>
-     *   <li>Seventh</li>
-     *   <li>Eighth</li>
-     *   <li>Ninth</li>
-     *   <li>Tenth</li>
-     * </ul>
-     *
-     * @example
-     * let first = number.first('.items li');
-     * expect(first.getText()).toBe('First');
-     *
-     * @returns {ElementFinder} finder representing the first matching element
-     */
-    first(elem) {
-        return this._getElements(elem).get(0);
-    },
+exports.numerator = {
 
     /**
      * Get the second matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.second(locator)
+     * @alias element.all(locator).second()
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -67,13 +28,18 @@ module.exports.number = {
      * </ul>
      *
      * @example
-     * let second = number.second('.items li');
+     * let second = element.all(by.css('.items li')).second();
+     * expect(second.getText()).toBe('Second');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let second = $$('.items li').second();
      * expect(second.getText()).toBe('Second');
      *
      * @returns {ElementFinder} finder representing the second matching element
      */
-    second(elem) {
-        return this._getElements(elem).get(1);
+    second() {
+        return this.get(1);
     },
 
     /**
@@ -96,13 +62,18 @@ module.exports.number = {
      * </ul>
      *
      * @example
-     * let third = number.third('.items li');
+     * let third = element.all(by.css('.items li')).third();
+     * expect(third.getText()).toBe('Third');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let third = $$('.items li').third();
      * expect(third.getText()).toBe('Third');
      *
      * @returns {ElementFinder} finder representing the third matching element
      */
-    third(elem) {
-        return this._getElements(elem).get(2);
+    third() {
+        return this.get(2);
     }
 
 };
