@@ -1,5 +1,18 @@
 # protractor-numerator
+
+[![Build Status](https://travis-ci.org/Marketionist/protractor-numerator.svg?branch=master)](https://travis-ci.org/Marketionist/protractor-numerator)
+[![npm version](https://img.shields.io/npm/v/protractor-numerator.svg)](https://www.npmjs.com/package/protractor-numerator)
+[![NPM License](https://img.shields.io/npm/l/protractor-numerator.svg)](https://github.com/Marketionist/protractor-numerator/blob/master/LICENSE)
+
 This module adds readable numeration for elements in Protractor tests
+
+## Supported versions
+[Node.js](http://nodejs.org/):
+- 6.x
+- 7.x
+
+[Protractor](https://www.npmjs.com/package/protractor):
+- 4.x
 
 ## Installation
 `npm install protractor-numerator --save-dev`

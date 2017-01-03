@@ -1,10 +1,11 @@
 {
   "name": "protractor-numerator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Readable numeration for elements in Protractor tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"[protractor-numerator] tests\""
+    "postinstall": "webdriver-manager update",
+    "test": "node_modules/.bin/protractor test/conf.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/Marketionist/protractor-numerator/issues"
   },
-  "homepage": "https://github.com/Marketionist/protractor-numerator#readme"
+  "homepage": "https://github.com/Marketionist/protractor-numerator#readme",
+  "devDependencies": {
+    "protractor": "^4.0.14"
+  }
 }
