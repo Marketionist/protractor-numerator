@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/Marketionist/protractor-numerator#readme",
   "devDependencies": {
-    "protractor": "^4.0.14"
+    "protractor": "^5.0.0"
   }
 }
