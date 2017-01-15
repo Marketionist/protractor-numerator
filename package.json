@@ -1,6 +1,6 @@
 {
   "name": "protractor-numerator",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Readable numeration for elements in Protractor tests",
   "main": "index.js",
   "scripts": {
