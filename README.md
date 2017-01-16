@@ -13,6 +13,7 @@ This module adds readable numeration for elements in Protractor tests
 
 [Protractor](https://www.npmjs.com/package/protractor):
 - 4.x
+- 5.x
 
 ## Installation
 `npm install protractor-numerator --save-dev`
@@ -53,10 +54,24 @@ like this:
 
 ```javascript
 let second = element.all(by.css('.items li')).second();
-let third = element.all(by.css('.items li')).third();
+let third = element.all(by.xpath('//li[@class="items"]')).third();
+let fourth = element.all(by.css('.items li')).fourth();
+let fifth = element.all(by.css('.items li')).fifth();
+let sixth = element.all(by.css('.items li')).sixth();
+let seventh = element.all(by.css('.items li')).seventh();
+let eighth = element.all(by.css('.items li')).eighth();
+let ninth = element.all(by.css('.items li')).ninth();
+let tenth = element.all(by.css('.items li')).tenth();
 
 expect(second.getText()).toBe('Second');
 expect(third.getText()).toBe('Third');
+expect(fourth.getText()).toBe('Fourth');
+expect(fifth.getText()).toBe('Fifth');
+expect(sixth.getText()).toBe('Sixth');
+expect(seventh.getText()).toBe('Seventh');
+expect(eighth.getText()).toBe('Eighth');
+expect(ninth.getText()).toBe('Ninth');
+expect(tenth.getText()).toBe('Tenth');
 ```
 
 ## Thanks
