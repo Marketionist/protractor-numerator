@@ -20,15 +20,29 @@ This module adds readable numeration for elements in Protractor tests
 
 ## Importing and enabling
 You can require protractor-numerator in `onPrepare` block inside
-`protractor.config.js`:
+`protractor.config.js`. Here is a short config example:
 
 ```javascript
-onPrepare: function () {
-    global.numerator = require('protractor-numerator').numerator;
-    protractor.ElementArrayFinder.prototype = Object.assign(
-        protractor.ElementArrayFinder.prototype, numerator);
-    // Some other code that needs to be executed before all tests
-}
+exports.config = {
+    directConnect: true,
+
+    framework: 'jasmine2',
+
+    specs: [
+        'spec.js'
+    ],
+
+    capabilities: {
+        'browserName': 'chrome'
+    },
+
+    onPrepare: function () {
+        global.numerator = require('../index.js').numerator;
+        protractor.ElementArrayFinder.prototype = Object.assign(
+            protractor.ElementArrayFinder.prototype, numerator);
+        // Some other code that needs to be executed before all tests
+    }
+};
 ```
 
 ## Usage
