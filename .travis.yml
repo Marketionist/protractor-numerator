@@ -25,6 +25,9 @@ before_install:
 install:
   - npm install
 
+before_script:
+  - npm start
+
 # http://docs.travis-ci.com/user/pull-requests/
 script:
   - npm test
