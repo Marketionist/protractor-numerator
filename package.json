@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
+    "start": "node test/server/server.test.js  > stdout.txt 2> stderr.txt &",
     "test": "node_modules/.bin/protractor test/conf.js"
   },
   "repository": {
