@@ -68,7 +68,7 @@ like this:
 
 ```javascript
 let second = element.all(by.css('.items li')).second();
-let third = element.all(by.xpath('//li[@class="items"]')).third();
+let third = element.all(by.xpath('//li[ancestor::*[@class="items"]]')).third();
 let fourth = element.all(by.css('.items li')).fourth();
 let fifth = element.all(by.css('.items li')).fifth();
 let sixth = element.all(by.css('.items li')).sixth();
