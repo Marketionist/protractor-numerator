@@ -1,3 +1,5 @@
+/* global numerator */
+
 exports.config = {
     directConnect: true,
 
@@ -8,7 +10,7 @@ exports.config = {
     ],
 
     capabilities: {
-        'browserName': 'chrome'
+        browserName: 'chrome'
     },
 
     onPrepare: function () {

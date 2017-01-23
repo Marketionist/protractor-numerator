@@ -1,6 +1,32 @@
+'use strict';
+
+let nodeTestingServer = require('node-testing-server').nodeTestingServer;
+
+// Settings for node testing server
+nodeTestingServer.config = {
+    hostname: 'localhost',
+    port: 8001,
+    logsEnabled: 0,
+    pages: {
+        '/test.html': `<ul class="items">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                        <li>Fourth</li>
+                        <li>Fifth</li>
+                        <li>Sixth</li>
+                        <li>Seventh</li>
+                        <li>Eighth</li>
+                        <li>Ninth</li>
+                        <li>Tenth</li>
+                    </ul>`
+    }
+}
+
 describe('protractor-numerator tests', function () {
-    let selectorLinkCSS = '.site-footer-links > li > a';
-    let selectorLinkXPath = '//a[ancestor::*[li[ancestor::*[contains(@class, "site-footer-links")]]]]';
+    // Selectors for tests
+    let selectorLinkCSS = '.items li';
+    let selectorLinkXPath = '//li[ancestor::*[@class="items"]]';
 
     beforeAll(function () {
         // Turn off Angular synchronization
@@ -8,70 +34,78 @@ describe('protractor-numerator tests', function () {
         // Output some information about current tests process
         console.log(`==> Tests running at: ${process.cwd()}`);
         console.log(`==> With argv: ${process.argv}`);
+
+        // Start node testing server
+        nodeTestingServer.start();
     });
 
     beforeEach(function () {
-        browser.get('https://github.com/');
+        browser.get(`http://${nodeTestingServer.config.hostname}:${nodeTestingServer.config.port}/test.html`);
     });
 
-    it('should get the first link from the Github main page footer', function () {
-        let linkFooterContactGitHub = element.all(by.css(selectorLinkCSS)).first();
-
-        expect(linkFooterContactGitHub.getText()).toBe('Contact GitHub');
+    afterAll(function () {
+        // Stop node testing server
+        nodeTestingServer.stop();
     });
 
-    it('should get the second link from the Github main page footer', function () {
-        let linkFooterAPI = element.all(by.xpath(selectorLinkXPath)).second();
+    it('should get the first list item from the test server page', function () {
+        let listItemFirst = element.all(by.css(selectorLinkCSS)).first();
 
-        expect(linkFooterAPI.getText()).toBe('API');
+        expect(listItemFirst.getText()).toBe('First');
     });
 
-    it('should get the third link from the Github main page footer', function () {
-        let linkFooterTraining = element.all(by.css(selectorLinkCSS)).third();
+    it('should get the second list item from the test server page', function () {
+        let listItemSecond = element.all(by.xpath(selectorLinkXPath)).second();
 
-        expect(linkFooterTraining.getText()).toBe('Training');
+        expect(listItemSecond.getText()).toBe('Second');
     });
 
-    it('should get the fourth link from the Github main page footer', function () {
-        let linkFooterShop = element.all(by.css(selectorLinkCSS)).fourth();
+    it('should get the third list item from the test server page', function () {
+        let listItemThird = element.all(by.css(selectorLinkCSS)).third();
 
-        expect(linkFooterShop.getText()).toBe('Shop');
+        expect(listItemThird.getText()).toBe('Third');
     });
 
-    it('should get the fifth link from the Github main page footer', function () {
-        let linkFooterBlog = element.all(by.css(selectorLinkCSS)).fifth();
+    it('should get the fourth list item from the test server page', function () {
+        let listItemFourth = element.all(by.css(selectorLinkCSS)).fourth();
 
-        expect(linkFooterBlog.getText()).toBe('Blog');
+        expect(listItemFourth.getText()).toBe('Fourth');
     });
 
-    it('should get the sixth link from the Github main page footer', function () {
-        let linkFooterAbout = element.all(by.css(selectorLinkCSS)).sixth();
+    it('should get the fifth list item from the test server page', function () {
+        let listItemFifth = element.all(by.css(selectorLinkCSS)).fifth();
 
-        expect(linkFooterAbout.getText()).toBe('About');
+        expect(listItemFifth.getText()).toBe('Fifth');
     });
 
-    it('should get the seventh link from the Github main page footer', function () {
-        let linkFooterTerms = element.all(by.css(selectorLinkCSS)).seventh();
+    it('should get the sixth list item from the test server page', function () {
+        let listItemSixth = element.all(by.css(selectorLinkCSS)).sixth();
 
-        expect(linkFooterTerms.getText()).toBe('Terms');
+        expect(listItemSixth.getText()).toBe('Sixth');
     });
 
-    it('should get the eighth link from the Github main page footer', function () {
-        let linkFooterPrivacy = element.all(by.css(selectorLinkCSS)).eighth();
+    it('should get the seventh list item from the test server page', function () {
+        let listItemSeventh = element.all(by.css(selectorLinkCSS)).seventh();
 
-        expect(linkFooterPrivacy.getText()).toBe('Privacy');
+        expect(listItemSeventh.getText()).toBe('Seventh');
     });
 
-    it('should get the ninth link from the Github main page footer', function () {
-        let linkFooterSecurity = element.all(by.css(selectorLinkCSS)).ninth();
+    it('should get the eighth list item from the test server page', function () {
+        let listItemEighth = element.all(by.css(selectorLinkCSS)).eighth();
 
-        expect(linkFooterSecurity.getText()).toBe('Security');
+        expect(listItemEighth.getText()).toBe('Eighth');
     });
 
-    it('should get the tenth link from the Github main page footer', function () {
-        let linkFooterStatus = element.all(by.css(selectorLinkCSS)).tenth();
+    it('should get the ninth list item from the test server page', function () {
+        let listItemNinth = element.all(by.css(selectorLinkCSS)).ninth();
 
-        expect(linkFooterStatus.getText()).toBe('Status');
+        expect(listItemNinth.getText()).toBe('Ninth');
+    });
+
+    it('should get the tenth list item from the test server page', function () {
+        let listItemTenth = element.all(by.css(selectorLinkCSS)).tenth();
+
+        expect(listItemTenth.getText()).toBe('Tenth');
     });
 
 });
