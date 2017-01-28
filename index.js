@@ -1,5 +1,7 @@
 'use strict';
 
+/* eslint valid-jsdoc: 0, no-magic-numbers: 0 */
+
 /*
  * Created by marketionist on 31.12.2016
  */
