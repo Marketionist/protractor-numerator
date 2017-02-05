@@ -37,7 +37,7 @@ exports.config = {
     },
 
     onPrepare: function () {
-        global.numerator = require('../index.js').numerator;
+        global.numerator = require('protractor-numerator').numerator;
         protractor.ElementArrayFinder.prototype = Object.assign(
             protractor.ElementArrayFinder.prototype, numerator);
         // Some other code that needs to be executed before all tests
@@ -67,28 +67,28 @@ Elements numeration inside Protractor end-to-end tests for this list can be done
 like this:
 
 ```javascript
-let second = element.all(by.css('.items li')).second();
-let third = element.all(by.xpath('//li[ancestor::*[@class="items"]]')).third();
-let fourth = element.all(by.css('.items li')).fourth();
-let fifth = element.all(by.css('.items li')).fifth();
-let sixth = element.all(by.css('.items li')).sixth();
-let seventh = element.all(by.css('.items li')).seventh();
-let eighth = element.all(by.css('.items li')).eighth();
-let ninth = element.all(by.css('.items li')).ninth();
-let tenth = element.all(by.css('.items li')).tenth();
+let listItemSecond = element.all(by.css('.items li')).second();
+let listItemThird = element.all(by.xpath('//li[ancestor::*[@class="items"]]')).third();
+let listItemFourth = element.all(by.css('.items li')).fourth();
+let listItemFifth = element.all(by.css('.items li')).fifth();
+let listItemSixth = element.all(by.css('.items li')).sixth();
+let listItemSeventh = element.all(by.css('.items li')).seventh();
+let listItemEighth = element.all(by.css('.items li')).eighth();
+let listItemNinth = element.all(by.css('.items li')).ninth();
+let listItemTenth = element.all(by.css('.items li')).tenth();
 
-expect(second.getText()).toBe('Second');
-expect(third.getText()).toBe('Third');
-expect(fourth.getText()).toBe('Fourth');
-expect(fifth.getText()).toBe('Fifth');
-expect(sixth.getText()).toBe('Sixth');
-expect(seventh.getText()).toBe('Seventh');
-expect(eighth.getText()).toBe('Eighth');
-expect(ninth.getText()).toBe('Ninth');
-expect(tenth.getText()).toBe('Tenth');
+expect(listItemSecond.getText()).toBe('Second');
+expect(listItemThird.getText()).toBe('Third');
+expect(listItemFourth.getText()).toBe('Fourth');
+expect(listItemFifth.getText()).toBe('Fifth');
+expect(listItemSixth.getText()).toBe('Sixth');
+expect(listItemSeventh.getText()).toBe('Seventh');
+expect(listItemEighth.getText()).toBe('Eighth');
+expect(listItemNinth.getText()).toBe('Ninth');
+expect(listItemTenth.getText()).toBe('Tenth');
 ```
 
 ## Thanks
-If this script was helpful for you, please give it a **Star**
-on [github](https://github.com/Marketionist/protractor-numerator) and
+If this script was helpful for you, please *give it a ★* on
+[Github](https://github.com/Marketionist/protractor-numerator) and
 [npm](https://www.npmjs.com/package/protractor-numerator)
