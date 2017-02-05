@@ -89,6 +89,6 @@ expect(listItemTenth.getText()).toBe('Tenth');
 ```
 
 ## Thanks
-If this script was helpful for you, please *give it a ★* on
+If this script was helpful for you, please *give it a ★ Star* on
 [Github](https://github.com/Marketionist/protractor-numerator) and
 [npm](https://www.npmjs.com/package/protractor-numerator)
