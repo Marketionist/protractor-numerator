@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.1
+
+**Documentation update**
+
+Details:
+
+- [enhanced and updated documentation](https://github.com/Marketionist/protractor-numerator/pull/11)
+
 ## v1.0.0
 
 **First release version**
@@ -17,4 +25,4 @@ Details:
 
 ## v1.1.0
 
-- Should be built using TypeScript v2.1
+- Should be built using TypeScript v2.x
