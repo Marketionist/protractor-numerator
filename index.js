@@ -314,6 +314,50 @@ exports.numerator = {
      */
     tenth() {
         return this.get(9);
+    },
+
+    /**
+     * Get the eleventh matching element for the ElementArrayFinder. This does not
+     * actually retrieve the underlying element.
+     *
+     * @alias number.eleventh(locator)
+     * @view
+     * <ul class="items">
+     *   <li>First</li>
+     *   <li>Second</li>
+     *   <li>Third</li>
+     *   <li>Fourth</li>
+     *   <li>Fifth</li>
+     *   <li>Sixth</li>
+     *   <li>Seventh</li>
+     *   <li>Eighth</li>
+     *   <li>Ninth</li>
+     *   <li>Tenth</li>
+     *   <li>Eleventh</li>
+     *   <li>Twelfth</li>
+     *   <li>Thirteenth</li>
+     *   <li>Fourteenth</li>
+     *   <li>Fifteenth</li>
+     *   <li>Sixteenth</li>
+     *   <li>Seventeenth</li>
+     *   <li>Eighteenth</li>
+     *   <li>Nineteenth</li>
+     *   <li>twentieth</li>
+     * </ul>
+     *
+     * @example
+     * let eleventh = element.all(by.css('.items li')).eleventh();
+     * expect(eleventh.getText()).toBe('Eleventh');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let eleventh = $$('.items li').eleventh();
+     * expect(eleventh.getText()).toBe('Eleventh');
+     *
+     * @returns {ElementFinder} finder representing the eleventh matching element
+     */
+    eleventh() {
+        return this.get(10);
     }
 
 };
