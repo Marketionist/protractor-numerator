@@ -48,7 +48,7 @@ exports.numerator = {
      * Get the third matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.third(locator)
+     * @alias element.all(locator).third(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -82,7 +82,7 @@ exports.numerator = {
      * Get the fourth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.fourth(locator)
+     * @alias element.all(locator).fourth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -116,7 +116,7 @@ exports.numerator = {
      * Get the fifth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.fifth(locator)
+     * @alias element.all(locator).fifth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -150,7 +150,7 @@ exports.numerator = {
      * Get the sixth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.sixth(locator)
+     * @alias element.all(locator).sixth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -184,7 +184,7 @@ exports.numerator = {
      * Get the seventh matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.seventh(locator)
+     * @alias element.all(locator).seventh(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -218,7 +218,7 @@ exports.numerator = {
      * Get the eighth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.eighth(locator)
+     * @alias element.all(locator).eighth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -252,7 +252,7 @@ exports.numerator = {
      * Get the ninth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.ninth(locator)
+     * @alias element.all(locator).ninth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -286,7 +286,7 @@ exports.numerator = {
      * Get the tenth matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.tenth(locator)
+     * @alias element.all(locator).tenth(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -320,7 +320,7 @@ exports.numerator = {
      * Get the eleventh matching element for the ElementArrayFinder. This does not
      * actually retrieve the underlying element.
      *
-     * @alias number.eleventh(locator)
+     * @alias element.all(locator).eleventh(locator)
      * @view
      * <ul class="items">
      *   <li>First</li>
@@ -342,7 +342,7 @@ exports.numerator = {
      *   <li>Seventeenth</li>
      *   <li>Eighteenth</li>
      *   <li>Nineteenth</li>
-     *   <li>twentieth</li>
+     *   <li>Twentieth</li>
      * </ul>
      *
      * @example
@@ -358,6 +358,182 @@ exports.numerator = {
      */
     eleventh() {
         return this.get(10);
+    },
+
+    /**
+     * Get the twelfth matching element for the ElementArrayFinder. This does not
+     * actually retrieve the underlying element.
+     *
+     * @alias element.all(locator).twelfth(locator)
+     * @view
+     * <ul class="items">
+     *   <li>First</li>
+     *   <li>Second</li>
+     *   <li>Third</li>
+     *   <li>Fourth</li>
+     *   <li>Fifth</li>
+     *   <li>Sixth</li>
+     *   <li>Seventh</li>
+     *   <li>Eighth</li>
+     *   <li>Ninth</li>
+     *   <li>Tenth</li>
+     *   <li>Eleventh</li>
+     *   <li>Twelfth</li>
+     *   <li>Thirteenth</li>
+     *   <li>Fourteenth</li>
+     *   <li>Fifteenth</li>
+     *   <li>Sixteenth</li>
+     *   <li>Seventeenth</li>
+     *   <li>Eighteenth</li>
+     *   <li>Nineteenth</li>
+     *   <li>Twentieth</li>
+     * </ul>
+     *
+     * @example
+     * let twelfth = element.all(by.css('.items li')).twelfth();
+     * expect(twelfth.getText()).toBe('Twelfth');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let twelfth = $$('.items li').twelfth();
+     * expect(twelfth.getText()).toBe('Twelfth');
+     *
+     * @returns {ElementFinder} finder representing the twelfth matching element
+     */
+    twelfth() {
+        return this.get(11);
+    },
+
+    /**
+     * Get the thirteenth matching element for the ElementArrayFinder. This does not
+     * actually retrieve the underlying element.
+     *
+     * @alias element.all(locator).thirteenth(locator)
+     * @view
+     * <ul class="items">
+     *   <li>First</li>
+     *   <li>Second</li>
+     *   <li>Third</li>
+     *   <li>Fourth</li>
+     *   <li>Fifth</li>
+     *   <li>Sixth</li>
+     *   <li>Seventh</li>
+     *   <li>Eighth</li>
+     *   <li>Ninth</li>
+     *   <li>Tenth</li>
+     *   <li>Eleventh</li>
+     *   <li>Twelfth</li>
+     *   <li>Thirteenth</li>
+     *   <li>Fourteenth</li>
+     *   <li>Fifteenth</li>
+     *   <li>Sixteenth</li>
+     *   <li>Seventeenth</li>
+     *   <li>Eighteenth</li>
+     *   <li>Nineteenth</li>
+     *   <li>Twentieth</li>
+     * </ul>
+     *
+     * @example
+     * let thirteenth = element.all(by.css('.items li')).thirteenth();
+     * expect(thirteenth.getText()).toBe('Thirteenth');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let thirteenth = $$('.items li').thirteenth();
+     * expect(thirteenth.getText()).toBe('Thirteenth');
+     *
+     * @returns {ElementFinder} finder representing the thirteenth matching element
+     */
+    thirteenth() {
+        return this.get(12);
+    },
+
+    /**
+     * Get the fourteenth matching element for the ElementArrayFinder. This does not
+     * actually retrieve the underlying element.
+     *
+     * @alias element.all(locator).fourteenth(locator)
+     * @view
+     * <ul class="items">
+     *   <li>First</li>
+     *   <li>Second</li>
+     *   <li>Third</li>
+     *   <li>Fourth</li>
+     *   <li>Fifth</li>
+     *   <li>Sixth</li>
+     *   <li>Seventh</li>
+     *   <li>Eighth</li>
+     *   <li>Ninth</li>
+     *   <li>Tenth</li>
+     *   <li>Eleventh</li>
+     *   <li>Twelfth</li>
+     *   <li>Thirteenth</li>
+     *   <li>Fourteenth</li>
+     *   <li>Fifteenth</li>
+     *   <li>Sixteenth</li>
+     *   <li>Seventeenth</li>
+     *   <li>Eighteenth</li>
+     *   <li>Nineteenth</li>
+     *   <li>Twentieth</li>
+     * </ul>
+     *
+     * @example
+     * let fourteenth = element.all(by.css('.items li')).fourteenth();
+     * expect(fourteenth.getText()).toBe('Fourteenth');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let fourteenth = $$('.items li').fourteenth();
+     * expect(fourteenth.getText()).toBe('Fourteenth');
+     *
+     * @returns {ElementFinder} finder representing the fourteenth matching element
+     */
+    fourteenth() {
+        return this.get(13);
+    },
+
+    /**
+     * Get the fifteenth matching element for the ElementArrayFinder. This does not
+     * actually retrieve the underlying element.
+     *
+     * @alias element.all(locator).fifteenth(locator)
+     * @view
+     * <ul class="items">
+     *   <li>First</li>
+     *   <li>Second</li>
+     *   <li>Third</li>
+     *   <li>Fourth</li>
+     *   <li>Fifth</li>
+     *   <li>Sixth</li>
+     *   <li>Seventh</li>
+     *   <li>Eighth</li>
+     *   <li>Ninth</li>
+     *   <li>Tenth</li>
+     *   <li>Eleventh</li>
+     *   <li>Twelfth</li>
+     *   <li>Thirteenth</li>
+     *   <li>Fourteenth</li>
+     *   <li>Fifteenth</li>
+     *   <li>Sixteenth</li>
+     *   <li>Seventeenth</li>
+     *   <li>Eighteenth</li>
+     *   <li>Nineteenth</li>
+     *   <li>Twentieth</li>
+     * </ul>
+     *
+     * @example
+     * let fifteenth = element.all(by.css('.items li')).fifteenth();
+     * expect(fifteenth.getText()).toBe('Fifteenth');
+     *
+     * // Or using the shortcut $$() notation instead of element.all(by.css()):
+     *
+     * let fifteenth = $$('.items li').fifteenth();
+     * expect(fifteenth.getText()).toBe('Fifteenth');
+     *
+     * @returns {ElementFinder} finder representing the fifteenth matching element
+     */
+    fifteenth() {
+        return this.get(14);
     }
 
 };
