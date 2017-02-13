@@ -25,4 +25,6 @@ Details:
 
 ## v1.1.0
 
-- Should be built using TypeScript v2.x
+- protractor-numerator should be built using TypeScript v2.x
+- add eleventh() - twentieth() element numeration functions
+- add e2e tests for eleventh() - twentieth() element numeration functions
