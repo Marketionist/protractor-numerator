@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "webdriver-manager update",
+    "prepublish": "node_modules/typescript/bin/tsc -p ./",
     "lint": "node_modules/.bin/eslint *.js test/**/*.js",
     "test": "node_modules/.bin/protractor test/conf.js"
   },
@@ -31,6 +32,7 @@
   "devDependencies": {
     "eslint": "^3.14.0",
     "node-testing-server": "^1.1.0",
-    "protractor": "^5.0.0"
+    "protractor": "^5.0.0",
+    "typescript": "^2.1.6"
   }
 }

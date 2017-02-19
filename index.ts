@@ -1,6 +1,8 @@
 'use strict';
 
-/* eslint valid-jsdoc: 0, no-magic-numbers: 0 */
+import { ElementFinder } from 'protractor';
+
+/* eslint valid-jsdoc: 0, no-magic-numbers: 0, "spaced-comment": 1, eol-last: 1 */
 
 /*
  * Created by marketionist on 31.12.2016
@@ -8,7 +10,7 @@
 
 // #############################################################################
 
-exports.numerator = {
+export let numerator = {
 
     /**
      * Get the second matching element for the ElementArrayFinder. This does not
@@ -40,7 +42,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the second matching element
      */
-    second() {
+    second(): ElementFinder {
         return this.get(1);
     },
 
@@ -74,7 +76,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the third matching element
      */
-    third() {
+    third(): ElementFinder {
         return this.get(2);
     },
 
@@ -108,7 +110,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the fourth matching element
      */
-    fourth() {
+    fourth(): ElementFinder {
         return this.get(3);
     },
 
@@ -142,7 +144,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the fifth matching element
      */
-    fifth() {
+    fifth(): ElementFinder {
         return this.get(4);
     },
 
@@ -176,7 +178,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the sixth matching element
      */
-    sixth() {
+    sixth(): ElementFinder {
         return this.get(5);
     },
 
@@ -210,7 +212,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the seventh matching element
      */
-    seventh() {
+    seventh(): ElementFinder {
         return this.get(6);
     },
 
@@ -244,7 +246,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the eighth matching element
      */
-    eighth() {
+    eighth(): ElementFinder {
         return this.get(7);
     },
 
@@ -278,7 +280,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the ninth matching element
      */
-    ninth() {
+    ninth(): ElementFinder {
         return this.get(8);
     },
 
@@ -312,7 +314,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the tenth matching element
      */
-    tenth() {
+    tenth(): ElementFinder {
         return this.get(9);
     },
 
@@ -356,7 +358,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the eleventh matching element
      */
-    eleventh() {
+    eleventh(): ElementFinder {
         return this.get(10);
     },
 
@@ -400,7 +402,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the twelfth matching element
      */
-    twelfth() {
+    twelfth(): ElementFinder {
         return this.get(11);
     },
 
@@ -444,7 +446,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the thirteenth matching element
      */
-    thirteenth() {
+    thirteenth(): ElementFinder {
         return this.get(12);
     },
 
@@ -488,7 +490,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the fourteenth matching element
      */
-    fourteenth() {
+    fourteenth(): ElementFinder {
         return this.get(13);
     },
 
@@ -532,7 +534,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the fifteenth matching element
      */
-    fifteenth() {
+    fifteenth(): ElementFinder {
         return this.get(14);
     },
 
@@ -576,7 +578,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the sixteenth matching element
      */
-    sixteenth() {
+    sixteenth(): ElementFinder {
         return this.get(15);
     },
 
@@ -620,7 +622,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the seventeenth matching element
      */
-    seventeenth() {
+    seventeenth(): ElementFinder {
         return this.get(16);
     },
 
@@ -664,7 +666,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the eighteenth matching element
      */
-    eighteenth() {
+    eighteenth(): ElementFinder {
         return this.get(17);
     },
 
@@ -708,7 +710,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the nineteenth matching element
      */
-    nineteenth() {
+    nineteenth(): ElementFinder {
         return this.get(18);
     },
 
@@ -752,7 +754,7 @@ exports.numerator = {
      *
      * @returns {ElementFinder} finder representing the twentieth matching element
      */
-    twentieth() {
+    twentieth(): ElementFinder {
         return this.get(19);
     }
 
