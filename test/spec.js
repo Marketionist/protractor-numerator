@@ -19,6 +19,16 @@ nodeTestingServer.config = {
                         <li>Eighth</li>
                         <li>Ninth</li>
                         <li>Tenth</li>
+                        <li>Eleventh</li>
+                        <li>Twelfth</li>
+                        <li>Thirteenth</li>
+                        <li>Fourteenth</li>
+                        <li>Fifteenth</li>
+                        <li>Sixteenth</li>
+                        <li>Seventeenth</li>
+                        <li>Eighteenth</li>
+                        <li>Nineteenth</li>
+                        <li>Twentieth</li>
                     </ul>`
     }
 }
@@ -106,6 +116,12 @@ describe('protractor-numerator tests', function () {
         let listItemTenth = element.all(by.css(selectorLinkCSS)).tenth();
 
         expect(listItemTenth.getText()).toBe('Tenth');
+    });
+
+    it('should get the eleventh list item from the test server page', function () {
+        let listItemEleventh = element.all(by.css(selectorLinkCSS)).eleventh();
+
+        expect(listItemEleventh.getText()).toBe('Eleventh');
     });
 
 });
