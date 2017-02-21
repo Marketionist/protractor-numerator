@@ -124,4 +124,28 @@ describe('protractor-numerator tests', function () {
         expect(listItemEleventh.getText()).toBe('Eleventh');
     });
 
+    it('should get the twelfth list item from the test server page', function () {
+        let listItemTwelfth = element.all(by.css(selectorLinkCSS)).twelfth();
+
+        expect(listItemTwelfth.getText()).toBe('Twelfth');
+    });
+
+    it('should get the thirteenth list item from the test server page', function () {
+        let listItemThirteenth = element.all(by.css(selectorLinkCSS)).thirteenth();
+
+        expect(listItemThirteenth.getText()).toBe('Thirteenth');
+    });
+
+    it('should get the fourteenth list item from the test server page', function () {
+        let listItemFourteenth = element.all(by.css(selectorLinkCSS)).fourteenth();
+
+        expect(listItemFourteenth.getText()).toBe('Fourteenth');
+    });
+
+    it('should get the fifteenth list item from the test server page', function () {
+        let listItemFifteenth = element.all(by.css(selectorLinkCSS)).fifteenth();
+
+        expect(listItemFifteenth.getText()).toBe('Fifteenth');
+    });
+
 });
