@@ -2,7 +2,7 @@
 
 import { ElementFinder } from 'protractor';
 
-/* eslint valid-jsdoc: 0, no-magic-numbers: 0, "spaced-comment": 1, eol-last: 1 */
+/* eslint valid-jsdoc: 0, no-magic-numbers: 0, spaced-comment: 1, eol-last: 1 */
 
 /*
  * Created by marketionist on 31.12.2016
