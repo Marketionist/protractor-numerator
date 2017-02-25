@@ -166,4 +166,10 @@ describe('protractor-numerator tests', function () {
         expect(listItemEighteenth.getText()).toBe('Eighteenth');
     });
 
+    it('should get the nineteenth list item from the test server page', function () {
+        let listItemNineteenth = element.all(by.css(selectorLinkCSS)).nineteenth();
+
+        expect(listItemNineteenth.getText()).toBe('Nineteenth');
+    });
+
 });
