@@ -172,4 +172,10 @@ describe('protractor-numerator tests', function () {
         expect(listItemNineteenth.getText()).toBe('Nineteenth');
     });
 
+    it('should get the twentieth list item from the test server page', function () {
+        let listItemTwentieth = element.all(by.css(selectorLinkCSS)).twentieth();
+
+        expect(listItemTwentieth.getText()).toBe('Twentieth');
+    });
+
 });
