@@ -60,6 +60,16 @@ For example let's take a small HTML list:
     <li>Eighth</li>
     <li>Ninth</li>
     <li>Tenth</li>
+    <li>Eleventh</li>
+    <li>Twelfth</li>
+    <li>Thirteenth</li>
+    <li>Fourteenth</li>
+    <li>Fifteenth</li>
+    <li>Sixteenth</li>
+    <li>Seventeenth</li>
+    <li>Eighteenth</li>
+    <li>Nineteenth</li>
+    <li>Twentieth</li>
 </ul>
 ```
 
@@ -76,6 +86,16 @@ let listItemSeventh = element.all(by.css('.items li')).seventh();
 let listItemEighth = element.all(by.css('.items li')).eighth();
 let listItemNinth = element.all(by.css('.items li')).ninth();
 let listItemTenth = element.all(by.css('.items li')).tenth();
+let listItemEleventh = element.all(by.css('.items li')).eleventh();
+let listItemTwelfth = element.all(by.css('.items li')).twelfth();
+let listItemThirteenth = element.all(by.css('.items li')).thirteenth();
+let listItemFourteenth = element.all(by.css('.items li')).fourteenth();
+let listItemFifteenth = element.all(by.css('.items li')).fifteenth();
+let listItemSixteenth = element.all(by.css('.items li')).sixteenth();
+let listItemSeventeenth = element.all(by.css('.items li')).seventeenth();
+let listItemEighteenth = element.all(by.css('.items li')).eighteenth();
+let listItemNineteenth = element.all(by.css('.items li')).nineteenth();
+let listItemTwentieth = element.all(by.css('.items li')).twentieth();
 
 expect(listItemSecond.getText()).toBe('Second');
 expect(listItemThird.getText()).toBe('Third');
@@ -86,9 +106,19 @@ expect(listItemSeventh.getText()).toBe('Seventh');
 expect(listItemEighth.getText()).toBe('Eighth');
 expect(listItemNinth.getText()).toBe('Ninth');
 expect(listItemTenth.getText()).toBe('Tenth');
+expect(listItemEleventh.getText()).toBe('Eleventh');
+expect(listItemTwelfth.getText()).toBe('Twelfth');
+expect(listItemThirteenth.getText()).toBe('Thirteenth');
+expect(listItemFourteenth.getText()).toBe('Fourteenth');
+expect(listItemFifteenth.getText()).toBe('Fifteenth');
+expect(listItemSixteenth.getText()).toBe('Sixteenth');
+expect(listItemSeventeenth.getText()).toBe('Seventeenth');
+expect(listItemEighteenth.getText()).toBe('Eighteenth');
+expect(listItemNineteenth.getText()).toBe('Nineteenth');
+expect(listItemTwentieth.getText()).toBe('Twentieth');
 ```
 
 ## Thanks
-If this script was helpful for you, please *give it a ★ Star* on
+If this script was helpful for you, please give it a **★ Star** on
 [Github](https://github.com/Marketionist/protractor-numerator) and
 [npm](https://www.npmjs.com/package/protractor-numerator)

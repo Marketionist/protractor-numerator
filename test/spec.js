@@ -19,6 +19,16 @@ nodeTestingServer.config = {
                         <li>Eighth</li>
                         <li>Ninth</li>
                         <li>Tenth</li>
+                        <li>Eleventh</li>
+                        <li>Twelfth</li>
+                        <li>Thirteenth</li>
+                        <li>Fourteenth</li>
+                        <li>Fifteenth</li>
+                        <li>Sixteenth</li>
+                        <li>Seventeenth</li>
+                        <li>Eighteenth</li>
+                        <li>Nineteenth</li>
+                        <li>Twentieth</li>
                     </ul>`
     }
 }
@@ -106,6 +116,66 @@ describe('protractor-numerator tests', function () {
         let listItemTenth = element.all(by.css(selectorLinkCSS)).tenth();
 
         expect(listItemTenth.getText()).toBe('Tenth');
+    });
+
+    it('should get the eleventh list item from the test server page', function () {
+        let listItemEleventh = element.all(by.css(selectorLinkCSS)).eleventh();
+
+        expect(listItemEleventh.getText()).toBe('Eleventh');
+    });
+
+    it('should get the twelfth list item from the test server page', function () {
+        let listItemTwelfth = element.all(by.css(selectorLinkCSS)).twelfth();
+
+        expect(listItemTwelfth.getText()).toBe('Twelfth');
+    });
+
+    it('should get the thirteenth list item from the test server page', function () {
+        let listItemThirteenth = element.all(by.css(selectorLinkCSS)).thirteenth();
+
+        expect(listItemThirteenth.getText()).toBe('Thirteenth');
+    });
+
+    it('should get the fourteenth list item from the test server page', function () {
+        let listItemFourteenth = element.all(by.css(selectorLinkCSS)).fourteenth();
+
+        expect(listItemFourteenth.getText()).toBe('Fourteenth');
+    });
+
+    it('should get the fifteenth list item from the test server page', function () {
+        let listItemFifteenth = element.all(by.css(selectorLinkCSS)).fifteenth();
+
+        expect(listItemFifteenth.getText()).toBe('Fifteenth');
+    });
+
+    it('should get the sixteenth list item from the test server page', function () {
+        let listItemSixteenth = element.all(by.css(selectorLinkCSS)).sixteenth();
+
+        expect(listItemSixteenth.getText()).toBe('Sixteenth');
+    });
+
+    it('should get the seventeenth list item from the test server page', function () {
+        let listItemSeventeenth = element.all(by.css(selectorLinkCSS)).seventeenth();
+
+        expect(listItemSeventeenth.getText()).toBe('Seventeenth');
+    });
+
+    it('should get the eighteenth list item from the test server page', function () {
+        let listItemEighteenth = element.all(by.css(selectorLinkCSS)).eighteenth();
+
+        expect(listItemEighteenth.getText()).toBe('Eighteenth');
+    });
+
+    it('should get the nineteenth list item from the test server page', function () {
+        let listItemNineteenth = element.all(by.css(selectorLinkCSS)).nineteenth();
+
+        expect(listItemNineteenth.getText()).toBe('Nineteenth');
+    });
+
+    it('should get the twentieth list item from the test server page', function () {
+        let listItemTwentieth = element.all(by.css(selectorLinkCSS)).twentieth();
+
+        expect(listItemTwentieth.getText()).toBe('Twentieth');
     });
 
 });
