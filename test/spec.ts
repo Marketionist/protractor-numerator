@@ -1,6 +1,10 @@
 'use strict';
 
-let nodeTestingServer = require('node-testing-server').nodeTestingServer;
+import {} from 'jasmine';
+import { browser, element, by } from 'protractor';
+const nodeTestingServer = require('node-testing-server').nodeTestingServer;
+
+/* eslint spaced-comment: 1, eol-last: 1, quotes: 1, max-len:1, newline-after-var: 0 */
 
 // Settings for node testing server
 nodeTestingServer.config = {

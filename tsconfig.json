@@ -4,6 +4,8 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "declaration": true,
+        "removeComments": false,
+        "noImplicitAny": true,
         "lib": [
             "es2016"
         ],
