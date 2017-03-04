@@ -73,10 +73,10 @@ For example let's take a small HTML list:
 </ul>
 ```
 
-Elements numeration inside Protractor end-to-end tests for this list can be done
-like this:
+Inside your Protractor end-to-end tests you can get any element of this list like this:
 
 ```javascript
+// Get all <li> elements from the list with class "items" and select one particular element by its number:
 let listItemSecond = element.all(by.css('.items li')).second();
 let listItemThird = element.all(by.xpath('//li[ancestor::*[@class="items"]]')).third();
 let listItemFourth = element.all(by.css('.items li')).fourth();
@@ -97,6 +97,7 @@ let listItemEighteenth = element.all(by.css('.items li')).eighteenth();
 let listItemNineteenth = element.all(by.css('.items li')).nineteenth();
 let listItemTwentieth = element.all(by.css('.items li')).twentieth();
 
+// Now you can do whatever you want with any element for example validate its text:
 expect(listItemSecond.getText()).toBe('Second');
 expect(listItemThird.getText()).toBe('Third');
 expect(listItemFourth.getText()).toBe('Fourth');
