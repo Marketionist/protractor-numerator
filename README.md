@@ -119,6 +119,6 @@ expect(listItemTwentieth.getText()).toBe('Twentieth');
 ```
 
 ## Thanks
-If this script was helpful for you, please give it a **★ Star** on
+If this plugin was helpful for you, please give it a **★ Star** on
 [Github](https://github.com/Marketionist/protractor-numerator) and
 [npm](https://www.npmjs.com/package/protractor-numerator)
