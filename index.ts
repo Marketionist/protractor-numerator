@@ -10,7 +10,7 @@ import { ElementFinder } from 'protractor';
 
 // #############################################################################
 
-export let numerator = {
+export const numerator = {
 
     /**
      * Get the second matching element for the ElementArrayFinder. This does not
