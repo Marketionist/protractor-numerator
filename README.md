@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/protractor-numerator.svg)](https://www.npmjs.com/package/protractor-numerator)
 [![NPM License](https://img.shields.io/npm/l/protractor-numerator.svg)](https://github.com/Marketionist/protractor-numerator/blob/master/LICENSE)
 
-This module adds readable numeration for elements in Protractor tests
+This module gives you readable functions for getting elements by their numbers inside Protractor tests
 
 ## Supported versions
 [Node.js](http://nodejs.org/):
