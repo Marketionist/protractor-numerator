@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1
+
+**Documentation update**
+
+Details:
+
+- [enhanced and updated documentation](https://github.com/Marketionist/protractor-numerator/pull/19)
+
 ## v1.1.0
 
 **Adding eleventh() - twentieth() element numeration functions and TypeScript**
