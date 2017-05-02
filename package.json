@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Marketionist/protractor-numerator#readme",
   "devDependencies": {
-    "@types/jasmine": "^2.5.43",
+    "@types/jasmine": "^2.5.47",
     "eslint": "^3.14.0",
     "node-testing-server": "^1.1.0",
     "protractor": "^5.1.1",
