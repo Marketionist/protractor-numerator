@@ -7,7 +7,10 @@
     "postinstall": "webdriver-manager update",
     "prepublish": "node_modules/typescript/bin/tsc -p ./",
     "lint": "node_modules/.bin/eslint *.js test/**/*.js",
-    "test": "node_modules/.bin/protractor test/conf.js"
+    "test": "node_modules/.bin/protractor test/conf.js",
+    "patch": "npm version patch -m \"Bumped up package version to %s\" && git push && npm publish",
+    "minor": "npm version minor -m \"Bumped up package version to %s\" && git push && npm publish",
+    "major": "npm version major -m \"Bumped up package version to %s\" && git push && npm publish"
   },
   "repository": {
     "type": "git",
@@ -30,7 +33,7 @@
   },
   "homepage": "https://github.com/Marketionist/protractor-numerator#readme",
   "devDependencies": {
-    "@types/jasmine": "^2.5.43",
+    "@types/jasmine": "^2.5.47",
     "eslint": "^3.14.0",
     "node-testing-server": "^1.1.0",
     "protractor": "^5.1.1",

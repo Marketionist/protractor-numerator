@@ -65,121 +65,161 @@ describe('protractor-numerator tests', function () {
     it('should get the first list item from the test server page', function () {
         let listItemFirst = element.all(by.css(selectorLinkCSS)).first();
 
-        expect(listItemFirst.getText()).toBe('First');
+        listItemFirst.getText().then((text: string) => {
+            expect(text).toBe('First');
+        });
     });
 
     it('should get the second list item from the test server page', function () {
         let listItemSecond = element.all(by.xpath(selectorLinkXPath)).second();
 
-        expect(listItemSecond.getText()).toBe('Second');
+        listItemSecond.getText().then((text: string) => {
+            expect(text).toBe('Second');
+        });
     });
 
     it('should get the third list item from the test server page', function () {
         let listItemThird = element.all(by.css(selectorLinkCSS)).third();
 
-        expect(listItemThird.getText()).toBe('Third');
+        listItemThird.getText().then((text: string) => {
+            expect(text).toBe('Third');
+        });
     });
 
     it('should get the fourth list item from the test server page', function () {
         let listItemFourth = element.all(by.css(selectorLinkCSS)).fourth();
 
-        expect(listItemFourth.getText()).toBe('Fourth');
+        listItemFourth.getText().then((text: string) => {
+            expect(text).toBe('Fourth');
+        });
     });
 
     it('should get the fifth list item from the test server page', function () {
         let listItemFifth = element.all(by.css(selectorLinkCSS)).fifth();
 
-        expect(listItemFifth.getText()).toBe('Fifth');
+        listItemFifth.getText().then((text: string) => {
+            expect(text).toBe('Fifth');
+        });
     });
 
     it('should get the sixth list item from the test server page', function () {
         let listItemSixth = element.all(by.css(selectorLinkCSS)).sixth();
 
-        expect(listItemSixth.getText()).toBe('Sixth');
+        listItemSixth.getText().then((text: string) => {
+            expect(text).toBe('Sixth');
+        });
     });
 
     it('should get the seventh list item from the test server page', function () {
         let listItemSeventh = element.all(by.css(selectorLinkCSS)).seventh();
 
-        expect(listItemSeventh.getText()).toBe('Seventh');
+        listItemSeventh.getText().then((text: string) => {
+            expect(text).toBe('Seventh');
+        });
     });
 
     it('should get the eighth list item from the test server page', function () {
         let listItemEighth = element.all(by.css(selectorLinkCSS)).eighth();
 
-        expect(listItemEighth.getText()).toBe('Eighth');
+        listItemEighth.getText().then((text: string) => {
+            expect(text).toBe('Eighth');
+        });
     });
 
     it('should get the ninth list item from the test server page', function () {
         let listItemNinth = element.all(by.css(selectorLinkCSS)).ninth();
 
-        expect(listItemNinth.getText()).toBe('Ninth');
+        listItemNinth.getText().then((text: string) => {
+            expect(text).toBe('Ninth');
+        });
     });
 
     it('should get the tenth list item from the test server page', function () {
         let listItemTenth = element.all(by.css(selectorLinkCSS)).tenth();
 
-        expect(listItemTenth.getText()).toBe('Tenth');
+        listItemTenth.getText().then((text: string) => {
+            expect(text).toBe('Tenth');
+        });
     });
 
     it('should get the eleventh list item from the test server page', function () {
         let listItemEleventh = element.all(by.css(selectorLinkCSS)).eleventh();
 
-        expect(listItemEleventh.getText()).toBe('Eleventh');
+        listItemEleventh.getText().then((text: string) => {
+            expect(text).toBe('Eleventh');
+        });
     });
 
     it('should get the twelfth list item from the test server page', function () {
         let listItemTwelfth = element.all(by.css(selectorLinkCSS)).twelfth();
 
-        expect(listItemTwelfth.getText()).toBe('Twelfth');
+        listItemTwelfth.getText().then((text: string) => {
+            expect(text).toBe('Twelfth');
+        });
     });
 
     it('should get the thirteenth list item from the test server page', function () {
         let listItemThirteenth = element.all(by.css(selectorLinkCSS)).thirteenth();
 
-        expect(listItemThirteenth.getText()).toBe('Thirteenth');
+        listItemThirteenth.getText().then((text: string) => {
+            expect(text).toBe('Thirteenth');
+        });
     });
 
     it('should get the fourteenth list item from the test server page', function () {
         let listItemFourteenth = element.all(by.css(selectorLinkCSS)).fourteenth();
 
-        expect(listItemFourteenth.getText()).toBe('Fourteenth');
+        listItemFourteenth.getText().then((text: string) => {
+            expect(text).toBe('Fourteenth');
+        });
     });
 
     it('should get the fifteenth list item from the test server page', function () {
         let listItemFifteenth = element.all(by.css(selectorLinkCSS)).fifteenth();
 
-        expect(listItemFifteenth.getText()).toBe('Fifteenth');
+        listItemFifteenth.getText().then((text: string) => {
+            expect(text).toBe('Fifteenth');
+        });
     });
 
     it('should get the sixteenth list item from the test server page', function () {
         let listItemSixteenth = element.all(by.css(selectorLinkCSS)).sixteenth();
 
-        expect(listItemSixteenth.getText()).toBe('Sixteenth');
+        listItemSixteenth.getText().then((text: string) => {
+            expect(text).toBe('Sixteenth');
+        });
     });
 
     it('should get the seventeenth list item from the test server page', function () {
         let listItemSeventeenth = element.all(by.css(selectorLinkCSS)).seventeenth();
 
-        expect(listItemSeventeenth.getText()).toBe('Seventeenth');
+        listItemSeventeenth.getText().then((text: string) => {
+            expect(text).toBe('Seventeenth');
+        });
     });
 
     it('should get the eighteenth list item from the test server page', function () {
         let listItemEighteenth = element.all(by.css(selectorLinkCSS)).eighteenth();
 
-        expect(listItemEighteenth.getText()).toBe('Eighteenth');
+        listItemEighteenth.getText().then((text: string) => {
+            expect(text).toBe('Eighteenth');
+        });
     });
 
     it('should get the nineteenth list item from the test server page', function () {
         let listItemNineteenth = element.all(by.css(selectorLinkCSS)).nineteenth();
 
-        expect(listItemNineteenth.getText()).toBe('Nineteenth');
+        listItemNineteenth.getText().then((text: string) => {
+            expect(text).toBe('Nineteenth');
+        });
     });
 
     it('should get the twentieth list item from the test server page', function () {
         let listItemTwentieth = element.all(by.css(selectorLinkCSS)).twentieth();
 
-        expect(listItemTwentieth.getText()).toBe('Twentieth');
+        listItemTwentieth.getText().then((text: string) => {
+            expect(text).toBe('Twentieth');
+        });
     });
 
 });

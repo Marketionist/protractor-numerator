@@ -123,7 +123,7 @@ Before you can actually publish make sure the following statements are true:
     [issues](https://github.com/Marketionist/protractor-numerator/issues)
     affected and the [PRs](https://github.com/Marketionist/protractor-numerator/pulls) raised.
 
-OK - you're actually ready. We're going to publish. Here we need tread carefully.
+OK - you're actually ready. We're going to publish. Here we need to go carefully.
 Follow these steps:
 
 - clone protractor-numerator from the main repo with this command:
