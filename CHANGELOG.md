@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.2
+
+**Dependency package update**
+
+Details:
+
+- [updated package.json, CONTRIBUTING.md and tests](https://github.com/Marketionist/protractor-numerator/pull/20)
+
 ## v1.1.1
 
 **Documentation update**
