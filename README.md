@@ -10,6 +10,7 @@ This module gives you readable functions for getting elements by their numbers i
 [Node.js](http://nodejs.org/):
 - 6.x
 - 7.x
+- 8.x
 
 [Protractor](https://www.npmjs.com/package/protractor):
 - 4.x
