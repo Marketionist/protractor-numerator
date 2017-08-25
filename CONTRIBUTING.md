@@ -1,7 +1,9 @@
 # Contributer's Guide
 
-We welcome contributions from the community and have gathered guidelines 
-here to help you get started.
+We welcome contributions - thanks for taking the time to contribute! Here are
+some guidelines to help you get started. These are just guidelines, not rules,
+use your best judgment and feel free to propose changes to this document in a
+pull request.
 
 ## Discussion
 
