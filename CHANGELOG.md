@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.3
+
+**Adding node 8 for tests**
+
+Details:
+
+- [added node 8 to run tests over](https://github.com/Marketionist/protractor-numerator/pull/22)
+
 ## v1.1.2
 
 **Dependency package update**
