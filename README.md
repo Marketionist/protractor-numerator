@@ -11,6 +11,7 @@ This module gives you readable functions for getting elements by their numbers i
 - 6.x
 - 7.x
 - 8.x
+- 9.x
 
 [Protractor](https://www.npmjs.com/package/protractor):
 - 4.x
@@ -122,5 +123,4 @@ expect(listItemTwentieth.getText()).toBe('Twentieth');
 
 ## Thanks
 If this plugin was helpful for you, please give it a **★ Star** on
-[Github](https://github.com/Marketionist/protractor-numerator) and
-[npm](https://www.npmjs.com/package/protractor-numerator)
+[Github](https://github.com/Marketionist/protractor-numerator)

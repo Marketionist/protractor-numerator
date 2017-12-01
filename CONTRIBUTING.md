@@ -1,6 +1,6 @@
 # Contributer's Guide
 
-We welcome contributions - thanks for taking the time to contribute! Here are
+We welcome contributions - thanks for taking time to contribute! Here are
 some guidelines to help you get started. These are just guidelines, not rules,
 use your best judgment and feel free to propose changes to this document in a
 pull request.
@@ -38,7 +38,7 @@ cd protractor-numerator
 Create a feature branch and start hacking:
 
 ```shell
-git checkout -b my-feature-branch
+git checkout -b my-feature-branch origin/master
 ```
 
 We practice HEAD-based development, which means all changes are applied
@@ -71,11 +71,11 @@ git rebase upstream/master
 
 ### Test
 
-Bug fixes and features **should have tests**. Look at other tests to see how
-they should be structured.
+Bug fixes and features **should have tests**. Look at [other tests](https://github.com/Marketionist/protractor-numerator/tree/master/test) to see
+how they should be structured.
 
-This project makes use of code linting and e2e tests to make sure we don't break
-anything. Before you submit your pull request make sure you pass all the tests:
+This project makes use of code linting and e2e tests to make sure nothing was
+broken. Before you submit your pull request make sure you pass all the tests:
 
 You can run code linting with: `npm run lint`.
 You can run all the e2e tests with: `npm test`.
@@ -92,9 +92,9 @@ _New pull request_ button and fill out the form.
 A good PR comment message can look like this:
 
 ```text
-Explain PR normatively in one line
+Explain PR briefly in one line
 
-Details of PR message are a few lines of text, explaining things
+Details of PR message can be few lines of text, explaining things
 in more detail, possibly giving some background about the issue
 being fixed, etc.
 
@@ -118,7 +118,7 @@ npm. Exciting!
 
 Before you can actually publish make sure the following statements are true:
 
-- All tests should be green.
+- All tests are green.
 - The version number in [package.json](package.json) has been incremented.
 - The [changelog](CHANGELOG.md) has been updated with details of the changes in
     this release. Where possible include the details of the
