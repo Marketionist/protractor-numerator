@@ -148,4 +148,11 @@ If all the tests passed then we're going to ship:
     the new markdown that you added to the [changelog](CHANGELOG.md).
 - Now the big moment of publishing updated package to npm: `npm publish`.
 
+Or use the short way:
+- From the master branch run `npm run patch` or `npm run minor` or `npm run major`
+    depending on the severity of changes you are publishing in this release.
+- On the releases page, click the "Draft a new release button" and, on the
+    presented page, select the version you've just released, name it and copy in
+    the new markdown that you added to the [changelog](CHANGELOG.md).
+
 You've released! Relax and enjoy your accomplishment.
