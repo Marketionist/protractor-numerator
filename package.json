@@ -8,9 +8,9 @@
     "prepublish": "node_modules/typescript/bin/tsc -p ./",
     "lint": "node_modules/.bin/eslint *.js test/**/*.js",
     "test": "node_modules/.bin/protractor test/conf.js",
-    "patch": "npm version patch -m \"Bumped up package version to %s\" && git push && npm publish",
-    "minor": "npm version minor -m \"Bumped up package version to %s\" && git push && npm publish",
-    "major": "npm version major -m \"Bumped up package version to %s\" && git push && npm publish"
+    "patch": "npm version patch -m \"Bumped up package version to %s\" && git push && git push origin --tags && npm publish",
+    "minor": "npm version minor -m \"Bumped up package version to %s\" && git push && git push origin --tags && npm publish",
+    "major": "npm version major -m \"Bumped up package version to %s\" && git push && git push origin --tags && npm publish"
   },
   "repository": {
     "type": "git",
