@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.1.5
+
+**Updating package bumping to push tags as a short way to release**
+
+Details:
+
+- [updated package bumping to push tags](https://github.com/Marketionist/protractor-numerator/pull/25)
+- [updated CONTRIBUTING.md with short way to release](https://github.com/Marketionist/protractor-numerator/pull/24)
+
 ## v1.1.4
 
 **Adding node 9 for tests**
