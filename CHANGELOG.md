@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.6
+
+**Adding node 10 for tests**
+
+Details:
+
+- [added support for node.js 10.x](https://github.com/Marketionist/protractor-numerator/pull/27)
+
 ## v1.1.5
 
 **Updating package bumping to push tags as a short way to release**
