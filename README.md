@@ -1,5 +1,9 @@
 # protractor-numerator
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+# This package is deprecated and will not be updated anymore as the Angular team announced that Protractor will be sunsetted at the end of 2022 - https://github.com/angular/protractor/issues/5502. Please consider switching to [testcafe-cucumber-steps](https://github.com/Marketionist/testcafe-cucumber-steps) or [webdriverio-cucumber-steps](https://github.com/Marketionist/webdriverio-cucumber-steps)
+
 [![Build Status](https://travis-ci.org/Marketionist/protractor-numerator.svg?branch=master)](https://travis-ci.org/Marketionist/protractor-numerator)
 [![npm version](https://img.shields.io/npm/v/protractor-numerator.svg)](https://www.npmjs.com/package/protractor-numerator)
 [![NPM License](https://img.shields.io/npm/l/protractor-numerator.svg)](https://github.com/Marketionist/protractor-numerator/blob/master/LICENSE)
